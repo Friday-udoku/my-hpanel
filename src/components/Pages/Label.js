@@ -6,7 +6,7 @@ import logo2 from '../image/logorm.png'
 import { WindowDesktop } from 'react-bootstrap-icons'
 import {Container,Navbar,} from 'react-bootstrap';
 import {NavLink, useNavigate, Link} from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import {Nav, Button} from 'react-bootstrap';
 import Modals from '../Header/DropdownContainer/Modals'
 import Register from '../Header/DropdownContainer/Register'
 import Minutes from './Minutes'
@@ -23,10 +23,14 @@ import { useAuth } from '../../Auth'
   const[username, setUsername]=useState('')
   const[password, setPassword]=useState('')
   let refs = useRef(null);
+ 
   const openMinutes =()=>{'/Minutes'}
-
-  const  authenticate=(e)=>{
+  const  authenticate=()=>{
    navigate('/SignIn')
+   refreshPage() 
+    }
+  const  gohome=()=>{
+   navigate('/')
    refreshPage() 
     }
 
@@ -98,19 +102,19 @@ window.addEventListener('scroll', changeBackground)
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
           
-              <NAVLINK to="/" onClick={refreshPage}><span className='span'>Home</span></NAVLINK>
-              <NAVLINK to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></NAVLINK>
-              <NAVLINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></NAVLINK>
-              <NAVLINK  to = '/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></NAVLINK>
-              <NAVLINK to='/Activities'><span className='span'>Activities</span></NAVLINK>
-              <NAVLINK to='/Acheivement'><span className='span'>Acheivement</span></NAVLINK>
+              <LINK to = '/' ><span className='span'>Home</span></LINK>
+              <LINK to = "/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
+              <LINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
+              <LINK  to = '/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
+              <LINK to='/Activities'><span className='span'>Activities</span></LINK>
+              <LINK to='/Acheivement'><span className='span'>Acheivement</span></LINK>
             </Nav>
       
           </div>
        
         
   
-          <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
+          {/* <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
             style={{ maxWidth: '10rem' }}>
 
              <button type="button" className="btn  btn-customised buttonx" style={{
@@ -124,7 +128,7 @@ window.addEventListener('scroll', changeBackground)
               Sign-in
             </button>
             <span className='REG'><Register className="" /></span>
-          </div>
+          </div> */}
         </div>
 
       </CANVAS>
@@ -137,7 +141,8 @@ window.addEventListener('scroll', changeBackground)
 
 export default Label
 
-const NAVLINK = styled(NavLink)`
+ 
+const LINK = styled(Link)`
     color:#f56038 !important;
     font-size:1.2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
