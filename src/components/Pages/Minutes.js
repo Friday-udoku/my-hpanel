@@ -6,6 +6,7 @@ import Modals from '../Header/DropdownContainer/Modals';
 import styled from 'styled-components';
 import {FaRegCalendarCheck} from 'react-icons/fa'
 import PrivatePageLink from '../Header/DropdownContainer/PrivatePageLink';
+import Pdf from './InnerPage/Pdf'
 
 
 
