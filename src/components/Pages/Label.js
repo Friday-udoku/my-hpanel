@@ -102,12 +102,12 @@ window.addEventListener('scroll', changeBackground)
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
           
-              <LINK to = '/' ><span className='span'>Home</span></LINK>
-              <LINK to = "/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
-              <LINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
-              <LINK  to = '/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
-              <LINK to='/Activities'><span className='span'>Activities</span></LINK>
-              <LINK to='/Acheivement'><span className='span'>Acheivement</span></LINK>
+              <LINK href = '/' ><span className='span'>Home</span></LINK>
+              <LINK href = "/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
+              <LINK href='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
+              <LINK  href = '/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
+              <LINK href='/Activities'><span className='span'>Activities</span></LINK>
+              <LINK href='/Acheivement'><span className='span'>Acheivement</span></LINK>
             </Nav>
       
           </div>
@@ -142,7 +142,7 @@ window.addEventListener('scroll', changeBackground)
 export default Label
 
  
-const LINK = styled(Link)`
+const LINK = styled.a`
     color:#f56038 !important;
     font-size:1.2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
