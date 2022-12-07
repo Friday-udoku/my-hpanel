@@ -34,7 +34,7 @@ const AboutUs = () => {
                 <BsFillHandThumbsUpFill className='thumbup'
                 color='#900C3F'/>
                <span className='mx-2 culture-title'>
-                <span className='igbo-value'>Igbos Enviable 
+                <span className='igbo-value text-danger'>Enviable Traditions
                 </span><span className="our">Our</span><span className="CV">Cultural Values</span></span></h5>
                <div className="mt-4 envi-list p-3" 
                style={{ color: '#f2f2f2', fontWeight:'400',

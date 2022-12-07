@@ -1,4 +1,48 @@
 
+
+
+
+/*Minutes of the meeting by date starts here*/
+.minutes-pages{
+display:grid;
+grid-template-columns: repeat(2,auto);
+justify-items: center;
+text-align: justify;
+gap: 5rem;
+.minutes-buttons{
+ margin-top:8rem !important;
+}
+@media(max-width: 992px){
+   grid-template-columns: repeat(1,auto);
+   align-items:start !important;
+   justify-items: left;
+   text-align: justify;
+      gap:5rem !important;
+   .minutes-buttons{
+      min-width: 80% !important;
+      max-width: 80% !important;
+      padding-bottom: 2rem!important;
+      margin-top:-5rem !important;
+      }
+}
+@media(max-width:786px){
+   .minutes-buttons{
+   margin-top:-5rem !important;
+   min-width: 100% !important;
+   max-width: 100% !important;
+   }
+   .minutes-title{
+      font-size:1.4rem !important;
+      text-align: left;
+   }
+}
+}
+.main-row{
+   display: grid;
+   min-width: 100vw;
+   grid-template-columns: repeat(2, auto) !important
+}
+
 /* Sidebar Nav pages starts here*/
 .header{
     @media(max-width:992px){
@@ -27,7 +71,9 @@
 
         @media(max-width:786px){
             padding-right:3rem !important;
-           
+            .minutes-pages{
+               text-align: left !important;
+            }
         }
 
       }
@@ -98,9 +144,18 @@
         background-color: #5c1010  !important;
         outline:none !important;
         border: none !important;
+      } 
+      .constitution-image {
+         min-width:100% !important;
+         max-width:100% !important;
+         object-fit: cover;
+         object-position: center !important;
       }
+
+      
    .constitution-table{
-    max-height:900px !important;
+
+    height:auto;
 
     }
 .page-header{
@@ -118,32 +173,40 @@ align-items: center;
  .li-alpha{list-style-type:lower-alpha !important;}
  .li-number{list-style-type: numeral}
  @media(max-width:992px){
- .horrizontal-4{
+ .horrizontal-{
     margin-top:80rem !important;
     margin-bottom: 3rem !important;
     
  }
- .horrizontal-5{
-    margin-top:8rem !important;
+ .horrizontal-{
+    margin-top:-6rem !important;
+  
+ }
+ .horrizontal-{
+    margin-top:1rem !important;
+    margin-bottom: 4rem !important;
+ }
+ .horrizontal-{
+    margin-top:-38rem !important;
+    margin-bottom: 4rem !important;
+ }
+ .horrizontal-{
+    margin-top:1rem !important;
     margin-bottom: 3rem !important;
  }
- .horrizontal-6{
-    margin-top:18rem !important;
-    margin-bottom: 3rem !important;
+ .horrizontal-{
+    margin-top:-17rem !important;
+    margin-bottom: 4rem !important;
  }
- .horrizontal-9{
-    margin-top:30rem !important;
-    margin-bottom: 3rem !important;
- }
- .horrizontal-11{
+ .horrizontal-{
     margin-top:10rem !important;
     margin-bottom: 3rem !important;
  }
- .horrizontal-13{
+ .horrizontal-{
     margin-top:58rem !important;
     margin-bottom: 3rem !important;
  }
- .horrizontal-15{
+ .horrizontal-{
     margin-top:25rem !important;
     margin-bottom: 3rem !important;
  }

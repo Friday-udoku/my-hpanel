@@ -24,13 +24,14 @@ const Feb2022Meeting = () => {
 
     <div className='relative h-100vh'>
     { <PrivatePageLink mode={Modals} className='fixed top-0' />}
-      <Container className='fluid text-dark ' style={{ minHeight: '100vh', height: 'auto' }}>
-        <Container>
-          <ROW className='main-row'>
-            <div className = 'col col-sm-12 col-md-12 col-lg-7'>
-          <TextPage className='jumbotron p-5 relative top-20 bottom-20 pb-10 text-justify febmeeting2022'>
 
-            <h2><strong>February Minutes of the Meeting</strong></h2>
+    <Container className=' fluid minutes-pages'>
+          
+          <div className = 'minutes-text text-dark '>
+
+          <TextPage className='py-5 relative top-20 bottom-20 pb-10 w-100'>
+
+            <h2 className='minutes-title'><strong> Minutes for February</strong></h2>
             <p><b>Date:</b> 13/02/2022</p>
 
             <p><strong>Members Present:</strong> Kingsley, Obodoechina, Francis, Emeka, Ugo, Chuks obinna </p>
@@ -38,11 +39,11 @@ const Feb2022Meeting = () => {
             <p>
                 <strong><h6>Agenda:</h6></strong>
                 <ul>
-                    <li>Stanley's Membership Review</li>
-                    <li>Obi's Repatriation and Funeral Updates</li>
-                    <li>Financial Statement / Repatriation Expenses</li>
-                    <li>Charitable Status review</li>
-                    <li>St Patrick Event</li>
+                    <li className ='li-number'>Stanley's Membership Review</li>
+                    <li className ='li-number'>Obi's Repatriation and Funeral Updates</li>
+                    <li className ='li-number'>Financial Statement / Repatriation Expenses</li>
+                    <li className ='li-number'>Charitable Status review</li>
+                    <li className ='li-number'>St Patrick Event</li>
                 </ul>
             </p>
                
@@ -124,48 +125,46 @@ const Feb2022Meeting = () => {
            
           </TextPage>
           </div>
-          <div className = 'col col-sm-12 col-md-12 col-lg-5 Columns relative top-32'>
-          <h3 className='d-flex w-100'><span><FaRegCalendarCheck className='mt-1 mx-1 me-2 text-red-700'/></span>Meeting Minutes by Date</h3>
-            <p className ='relative top-12 left-2 grid grid-cols-1 gap-3 button-page'>
 
-        <BUTTON className='px-5 py-2 text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/Match2022Meeting'>
-            Minutes of the Meeting for March | 13/04/2022</BUTTON>
-        
-          <BUTTON className='px-5 py-2 text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/April2022Meeting'>
-            Minutes of the Meeting for April | 10/04/2022</BUTTON>
+          <div className='minutes-buttons'>
+            <div className = ' relative'>
+              <h2 className='d-flex '> <span><FaRegCalendarCheck className='mt-1 mx-1 me-2 text-red-700'/></span>
+              <b className='text-dark pb-4'>
+             Minutes by Date</b></h2>
+             <div className =' relative  grid grid-cols-1 gap-3 '
+          >
 
-          <BUTTON className='px-5 py-2 text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/May2022Meeting'>
-            Minutes of the Meeting for May | 8/05/2022</BUTTON>
+        <BUTTON className='px-3 py-2 text-decoration-none text-light text-center shadow-none border-none  outline-line' as={Link} to= '/Match2022Meeting'>
+            Minutes for March | 13/04/2022</BUTTON>
+    
+          <BUTTON className='px-3 py-2 text-center text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/April2022Meeting'>
+            Minutes for April | 10/04/2022</BUTTON>
 
-          <BUTTON className='px-5 py-2 text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/June2022Meeting'>
-            Minutes of the Meeting for June | 12/05/2022</BUTTON>
+          <BUTTON className='px-3 py-2 text-center text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/May2022Meeting'>
+            Minutes  for May | 8/05/2022</BUTTON>
 
-          <BUTTON className='px-5 py-2 text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/Sept2022Meeting'>
-            Minutes of the Meeting for Sept | 18/05/2022</BUTTON>
+          <BUTTON className='px-3 py-2 text-center text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/June2022Meeting'>
+            Minutes  for June | 12/05/2022</BUTTON>
+
+          <BUTTON className='px-3 py-2  text-center text-decoration-none text-light shadow-none border-none  outline-line' as={Link} to= '/Sept2022Meeting'>
+            Minutes for Sept | 18/05/2022</BUTTON>
 
             <BUTTON as={Link} to='/Oct2022Meeting'
-                  className='px-5 py-2 text-decoration-none text-light shadow-none border-none outline-line'>
-                  Minutes of the Meeting for October | 9/10/2022</BUTTON>
+                  className='px-2 text-center py-2 text-decoration-none text-light shadow-none border-none outline-line'>
+                  Minutes  for October | 9/10/2022</BUTTON>
 
-                <BUTTON as={Link} to='Oct2019Meeting'
-                  className='px-5 py-2 text-decoration-none text-light shadow-none border-none outline-line'>
-                  Minutes of the Meeting for October | 13/10/2022</BUTTON>
+                <BUTTON as={Link} to='/Oct2019Meeting'
+                  className='px-3 text-center py-2 text-decoration-none text-light shadow-none border-none outline-line'>
+                  Minutes   for October | 13/10/2019</BUTTON>
 
           <BUTTON className='constution shadow-none border-none outline-line
            px-5 py-2 text-decoration-none text-light'
            as={Link} to='/Minutes'
-           >Click to navigate Back to the Constitution Page</BUTTON>
-          </p>
+           > Back to the Constitution Page</BUTTON>
+         </div>
           </div>
-          <Row>
-            <>
-      
-          </>
-          </Row>
-          </ROW>
-         
+          </div>
         </Container>
-      </Container>
   {<Footer/>}
  </div>
     

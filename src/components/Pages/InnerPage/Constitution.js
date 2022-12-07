@@ -2,19 +2,47 @@ import React,{Fragment, useState} from 'react'
 import table from '../../image/table1.png'
 import table1 from '../../image/table3.png'
 import styled from 'styled-components'
+import { Button} from 'react-bootstrap';
+import { useAuth } from '../../../Auth'
+import { useNavigate} from 'react-router-dom';
+import { useLocation } from 'react-router';
+
+
+
 
 
 
 export const Constitution = () => {
+
+   const auth = useAuth();
+    const navigate = useNavigate()
+    const locations = useLocation();
+    const redirect = locations.state?.path || '/'
+  
+  const signout = ()=>{
+    auth.logout()
+    navigate(redirect, {replace: true})
+  }
   
   return (
     <>
         <div className='container-fluid h-100vh w-100vw m-0 p-5'>
         <div className='container text-dark' style={{fontFamily:'sans-serif'}}>
 
-    <div className='container'>
+        <div className='container'>
 
-    <h3 className='text-dark m-auto text-left relative left-16'>ICANWI CONSTITUTION IN DETAILS</h3>
+        <Title className = 'constitution-title'>
+        <h3 className='text-dark text-left relative right-20'>
+        ICANWI CONSTITUTION IN DETAILS</h3>
+        <p className='navbar-links Auth-btn'>
+        <Button className=
+        'logout-btn bg-transparent outline-none shadow-none d-flex justify-content-center align-items-center'
+        onClick={signout} 
+        >
+        <span className='text-dark w-48'>finish reading? </span><span className='span-log btn btn-light shadow-none text-dark' style={{fontSize: '1.5rem'}}>Logout</span>
+        </Button>
+        </p>
+        </Title>
 
     {    <hr className="horrizontal" 
         style={{
@@ -24,14 +52,14 @@ export const Constitution = () => {
         />}
 
 
-<p>{<img src={table} alt= 'Big image' className='constitution-table'/>}</p>
+<div className='w-100'>{<img src={table} alt= 'constitution-image image' className='constitution-table'/>}</div>
 {    <hr className="horrizontal" 
         style={{
         marginTop: '1rem', 
         marginBottom: '1rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
         />}
-<p >{<img src={table1} alt= 'Big image' className='constitution-table'/>}</p>
+<div className='w-100'>{<img src={table1} alt= 'Big image constitution-image ' className='constitution-table'/>}</div>
 {    <hr className="horrizontal" 
         style={{
         marginTop: '1rem', 
@@ -62,8 +90,8 @@ The Ibo Association of Donegal is a socio-cultural, non-profit organization. Lit
 
 {    <hr className="horrizontal" 
         style={{
-        marginTop: '1rem', 
-        marginBottom: '1rem', 
+        marginTop: '10px', 
+        marginBottom: '2rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
         />}
 
@@ -96,8 +124,8 @@ Section IV<br/><br/>
 
 {    <hr className="horrizontal" 
         style={{
-        marginTop: '6rem', 
-        marginBottom: '1rem', 
+        marginTop: '3rem', 
+        marginBottom: '3rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
         />}
 
@@ -115,6 +143,7 @@ An active member of the association who wishes to maintain this status during a 
 
 {    <hr className="horrizontal" 
         style={{
+                
         marginTop: '1rem', 
         marginBottom: '1rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
@@ -198,13 +227,15 @@ The President<br/>
 
 </div>
 
-
-{    <hr className="horrizontal-4" 
+{    <hr className="horrizontal" 
         style={{
-        marginTop: '60rem', 
-        marginBottom: '1rem', 
+                position: 'relative',
+                top:'.5rem',
+        marginTop: '1rem', 
+        marginBottom: '3rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
-/>}
+        />}
+
 
 {/* Template of consistuency */}
 {/* Template of consistuency */}
@@ -254,6 +285,7 @@ The President<br/>
 
 {    <hr className="horrizontal-5" 
         style={{
+
         marginTop: '1rem', 
         marginBottom: '3rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
@@ -326,7 +358,6 @@ The President<br/>
 
 {    <hr className="horrizontal-7" 
         style={{
-        marginTop: '1rem', 
         marginBottom: '3rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
 />}
@@ -435,7 +466,7 @@ All members are encouraged to attend meetings regularly in order to be part of t
         style={{
         marginTop: '1rem', 
         marginBottom: '1rem', 
-        borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
+        borderTop: '4px solid rgba(0, 0, 0, 0.9)'}}
 />}
 
 
@@ -516,7 +547,7 @@ Delinquent Receivables Delinquency in payment(s) of Association's dues and fees 
 {    <hr className="horrizontal-11" 
         style={{
         marginTop: '1rem', 
-        marginBottom: '1rem', 
+        marginBottom: '4rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
 />}
 <div className='constitution-table' style={{maxWidth:'45rem'}}>
@@ -593,7 +624,7 @@ Delinquent Receivables Delinquency in payment(s) of Association's dues and fees 
 { <hr className="horrizontal-13" 
         style={{
         marginTop: '1rem', 
-        marginBottom: '1rem', 
+        marginBottom: '4rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
 />}
 <div className='constitution-table' style={{maxWidth:'45rem'}}>
@@ -611,7 +642,7 @@ Delinquent Receivables Delinquency in payment(s) of Association's dues and fees 
 {    <hr className="horrizontal-14" 
         style={{
         marginTop: '1rem', 
-        marginBottom: '1rem', 
+        marginBottom: '4rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
 />}
 <div className='constitution-table' style={{maxWidth:'45rem'}}>
@@ -659,7 +690,7 @@ Delinquent Receivables Delinquency in payment(s) of Association's dues and fees 
 {    <hr className="horrizontal-15" 
         style={{
         marginTop: '1rem', 
-        marginBottom: '1rem', 
+        marginBottom: '4rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}
 />}
 <div className='constitution-table' style={{maxWidth:'45rem'}}>
@@ -789,3 +820,16 @@ Delinquent Receivables Delinquency in payment(s) of Association's dues and fees 
 </>
   )
 }
+const Title = styled.div`
+display:flex;
+justify-content:space-evenly;
+align-items: center;
+@media(max-width:1000px){
+        flex-wrap:wrap;
+        justify-content:center;
+        h3{right:0 !important;
+        text-transform:capitalize;
+font-size:1.2rem !important}
+}
+
+`

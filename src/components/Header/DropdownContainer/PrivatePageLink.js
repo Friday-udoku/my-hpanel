@@ -66,7 +66,7 @@ const PrivatePageLink = () => {
                   'logout-btn bg-transparent outline-none shadow-none'
                   onClick={signout} 
                   >
-                    <span className='span-log outline-none shadow-none'>Logout</span></Button>
+                  <span className='span-log outline-none shadow-none'>Logout</span></Button>
                   <a href='#' className='register'><span className='span-log'><Modals/></span></a>
                 </LEGIT>
               </span>
@@ -95,7 +95,7 @@ const PrivatePageLink = () => {
             </div>
          
           
-    
+    {/* 
             <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
               style={{ maxWidth: '10rem' }}>
   
@@ -110,7 +110,8 @@ const PrivatePageLink = () => {
                 Sign-in
               </button>
               <span className='REG'><Register className="" /></span>
-            </div>
+            </div>*/}
+
           </div>
   
         </CANVAS>

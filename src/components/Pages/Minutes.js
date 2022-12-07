@@ -47,6 +47,9 @@ import Pdf from './InnerPage/Pdf'
   function constitution(){
     navigation('/Constitution')
   }
+  function party(){
+    navigation('/Update')
+  }
   
   
   return (
@@ -65,27 +68,28 @@ import Pdf from './InnerPage/Pdf'
 
           </Col>
           <Col className = ' col-md-12 col-lg-5 Columns relative top-32 '>
-            <h3 className='d-flex w-100'><span><FaRegCalendarCheck className='mt-1 mx-1'/></span>Meeting Minutes | Date</h3>
+            <h3 className='d-flex w-100'><span><FaRegCalendarCheck className='mt-1 mx-1'/></span>Minutes By | Date</h3>
+                               
             <p className ='relative top-12 left-2 grid grid-cols-1 gap-3 button-page '  >
 
-            <BUTTON onClick={octMeeting2022}> Meeting Minutes <span>for October </span>| 9/10/2022</BUTTON>
+            <Link to ='/Update' className='bg-warning shadow-md text-center p-1 text-decoration-none' style={{fontSize:'1.2rem'}}><b>Xmass / Appreciation Party Update</b></Link>
 
-            <BUTTON onClick={septMeeting}> Meeting Minutes <span>for September </span>| 18/09/2022</BUTTON>
+            <BUTTON onClick={octMeeting2022}> Minutes for October | 9/10/2022</BUTTON>
+
+            <BUTTON onClick={septMeeting}>  Minutes for September| 18/09/2022</BUTTON>
 
   
-          <BUTTON onClick={juneMeeting}> Meeting Minutes <span>for June </span>| 12/06/2022</BUTTON>
+          <BUTTON onClick={juneMeeting}>Minutes for June | 12/06/2022</BUTTON>
 
-          <BUTTON onClick={mayMeeting}> Meeting Minutes <span>for May </span>| 8/05/2022</BUTTON>
+          <BUTTON onClick={mayMeeting}> Minutes for May | 8/05/2022</BUTTON>
 
-          <BUTTON onClick={aprilMeeting}>Meeting Minutes <span>for April </span>| 10/04/2022</BUTTON>
+          <BUTTON onClick={aprilMeeting}>Minutes for April | 10/04/2022</BUTTON>
 
-          <BUTTON onClick={matchMeeting}> Meeting Minutes <span>for March </span>| 13/03/2022</BUTTON>
+          <BUTTON onClick={matchMeeting}> Minutes for March | 13/03/2022</BUTTON>
 
-          <BUTTON onClick={febMeeting}> Meeting Minutes <span>for Feb </span>| 13/02/2022</BUTTON>
+          <BUTTON onClick={febMeeting}> Minutes for Feb | 13/02/2022</BUTTON>
 
-          <BUTTON onClick={octMeeting}> Meeting Minutes <span>for October </span>| 13/10/2019</BUTTON>
-
-          
+          <BUTTON onClick={octMeeting}> Minutes for October | 13/10/2019</BUTTON>
           </p>
           </Col>
           </ROW>

@@ -52,10 +52,11 @@ const PageNavigstions = () => {
                 data-bs-toggle="offcanvas" data-bs-target="#demo"
                 className='hover:cursor-pointer dropIcon pt-2 mr-5 relative' />
 
-              <span className='navbar-links d-flex '>
-                <a href='#' className='nav-link'>Sign in</a>
+               <span className='navbar-links Auth-btn relative top-6'>
+                <NavLink className='span-log relative right-6 w-20 text-decoration-none' to='/SignIn'>Sign in</NavLink>
                 <a href='#' className='nav-link'><Modals /></a>
               </span>
+            
             </span>
 
           </span>
@@ -84,7 +85,7 @@ const PageNavigstions = () => {
        
         
   
-          <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
+          {/* <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
             style={{ maxWidth: '10rem' }}>
 
              <button type="button" className="btn  btn-customised buttonx" style={{
@@ -98,7 +99,7 @@ const PageNavigstions = () => {
               Sign-in
             </button>
             <span className='REG'><Register className="" /></span>
-          </div>
+          </div> */}
         </div>
 
       </CANVAS>
