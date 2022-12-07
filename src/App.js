@@ -46,22 +46,74 @@ function refreshPage() {window.reload(false);}
  <Route exact path='*' element={<Home/>}/>
  <Route path='/Gallary' element={<Gallary/>}/>
  <Route path='/Videos' element={<Videos/>}/> 
- <Route path='/Update' element={<Update/>}/> 
+ <Route path='/Update' element={
+   <RequireAuth>
+       <Update/>
+
+   </RequireAuth>
+ }/> 
 <Route path='/Minutes' element={
   <RequireAuth> 
       <Minutes/>
  </RequireAuth> 
 }/>
 
- <Route path='/May2022meeting' element={<May2022meeting/>}/>
- <Route path='/April2022Meeting' element={<April2022Meeting/>}/>
- <Route path='/Match2022Meeting' element={<Match2022Meeting/>}/>
- <Route path='/Feb2022Meeting' element={<Feb2022Meeting/>}/>
- <Route path='/June2022Meeting' element={<June2022Meeting/>}/>
- <Route path='/Sept2022Meeting' element={<Sept2022Meeting/>}/>
- <Route path='/Oct2019Meeting' element={<Oct2019Meeting/>}/>
- <Route path='/Oct2022Meeting' element={<Oct2022Meeting/>}/>
- <Route path='/Constitution' element={<Constitution/>}/>
+ <Route path='/May2022meeting' element={
+    <RequireAuth> 
+ <May2022meeting/>
+</RequireAuth> 
+
+ }/>
+ <Route path='/April2022Meeting' element={
+ <RequireAuth> 
+    <April2022Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/Match2022Meeting' element={
+ <RequireAuth> 
+    <Match2022Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/Feb2022Meeting' element={
+ <RequireAuth>
+    <Feb2022Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/June2022Meeting' element={
+ <RequireAuth> 
+    <June2022Meeting/>
+
+</RequireAuth> 
+ 
+ }/>
+ <Route path='/Sept2022Meeting' element={
+ <RequireAuth> 
+    <Sept2022Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/Oct2019Meeting' element={
+ <RequireAuth> 
+    <Oct2019Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/Oct2022Meeting' element={
+ <RequireAuth> 
+    <Oct2022Meeting/>
+
+</RequireAuth> 
+ }/>
+ <Route path='/Constitution' element={
+
+ <RequireAuth> 
+       <Constitution/>
+
+</RequireAuth> 
+ }/>
  <Route path='/SignIn' element={<SignIn/>}/>
  </Routes> 
     </AppHeader>
