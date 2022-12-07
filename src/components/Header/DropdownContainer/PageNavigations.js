@@ -76,7 +76,7 @@ const PageNavigstions = () => {
               <LINK as={NavLink} to="/" onClick={refreshPage}><span className='span'>Home</span></LINK>
               <LINK as={NavLink}  to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
               <LINK as={NavLink}  to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
-              <LINK to='/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
+              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
               <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Donations</span></LINK>
               <LINK as={NavLink}  to='/' onClick={refreshPage}><span className='span'>Acheivement</span></LINK>
             </Nav>
