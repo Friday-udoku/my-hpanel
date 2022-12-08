@@ -2,15 +2,11 @@ import {React, useState, useRef} from 'react'
 import {BsChevronCompactDown} from 'react-icons/bs'
 import styled from 'styled-components'
 import {BsJustify} from 'react-icons/bs'
-import logo2 from '../image/logorm.png'
-import { WindowDesktop } from 'react-bootstrap-icons'
-import {Container,Navbar,} from 'react-bootstrap';
 import {NavLink, useNavigate, Link, Navigate} from 'react-router-dom';
-import {Nav, Button} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
 import Modals from '../Header/DropdownContainer/Modals'
 import Register from '../Header/DropdownContainer/Register'
 import Minutes from './Minutes'
-import Forms from '../Pages/Forms'
 import SignIn from '../Header/DropdownContainer/SignIn'
 import { useAuth } from '../../Auth'
 
@@ -24,19 +20,6 @@ import { useAuth } from '../../Auth'
   const[password, setPassword]=useState('')
   let refs = useRef(null);
  
-  const openMinutes =()=>{'/Minutes'}
-  const  authenticate=()=>{
-   navigate('/SignIn')
-   refreshPage() 
-    }
-  const  gohome=()=>{
-   navigate('/')
-   refreshPage() 
-    }
-
-   function refreshPage() {
-     window.reload(false);
-   }
  
    const changeBackground = ()=>{
    if(window.scrollY>=80){
@@ -60,7 +43,7 @@ window.addEventListener('scroll', changeBackground)
 
         <div className='navbars row'>
           <a class="navbar-brand relative col-auto" href="#">
-            <h2 className='relative'>ICANWI</h2>
+            <h2 className='relative'><NavLink to='/Gallary'>ICANWI</NavLink></h2>
           </a>
           <span className='menu ' style={{ minWidth: '350px' }}>
             <span style={{ minWidth: '150px', maxWidth: '350px' }}
@@ -101,14 +84,14 @@ window.addEventListener('scroll', changeBackground)
        
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
-              <LINK as={NavLink} to = '/my-hpanel/home/' onClick={refreshPage} ><span className='span'>Home</span></LINK>
-              <LINK as={NavLink} to = "/my-hpanel/Gallary"><span className='span'>Gallery</span>
+              <LINK to = '/' ><span className='span'>Home</span></LINK>
+              <LINK to = "/Gallary" target={'_top'}><span className='span'>Gallery</span>
               </LINK>
-              <LINK as={NavLink} to = '/my-hpanel/Videos/' onClick={refreshPage}><span className='span'>Videos</span></LINK>
-              <LINK as={NavLink} to = '/SignIn'><span className='span'>Minutes</span>
+              <LINK  to = "/Videos" target={'_top'}><span className='span'>Videos</span></LINK>
+              <LINK  to = "/SignIn" target={'_top'}><span className='span'>Minutes</span>
               </LINK>
-              <LINK as={NavLink} to = '/my-hpanel/Activities'><span className='span'>Activities</span></LINK>
-              <LINK as={NavLink} to = '/my-hpanel/SignIn' onClick={refreshPage}><span className='span'>Party-Donations</span></LINK>
+              <LINK  to = "/Activities" target={'_top'}><span className='span'>Activities</span></LINK>
+              <LINK  to = "/SignIn" target={'_top'}><span className='span'>Party-Donations</span></LINK>
             </Nav>
           </div>
 
@@ -140,7 +123,7 @@ window.addEventListener('scroll', changeBackground)
 export default Label
 
  
-const LINK = styled(Nav.Link)`
+const LINK = styled(NavLink)`
     color:#f56038 !important;
     font-size:1.2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
