@@ -26,12 +26,10 @@ import { useAuth } from '../../Auth'
   const openMinutes =()=>{'/Minutes'}
 
  
-  
-    function refreshPage() {
+  function refreshPage() {
+    window.reload(false);
+  }
     
-          window.location.reload();
-   
-    }
  
    const changeBackground = ()=>{
    if(window.scrollY>=80){
