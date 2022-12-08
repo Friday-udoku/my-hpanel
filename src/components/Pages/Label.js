@@ -33,7 +33,7 @@ import { useAuth } from '../../Auth'
   
     function refreshPage() {
       setTimeout(()=>{
-          window.location.reload(false);
+          window.location.reload();
       }, 500);
       console.log('page to reload')
     }
@@ -101,7 +101,6 @@ window.addEventListener('scroll', changeBackground)
        
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
-          
               <NAVLINK to="/" onClick={refreshPage}><span className='span'>Home</span></NAVLINK>
               <NAVLINK to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></NAVLINK>
               <NAVLINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></NAVLINK>
