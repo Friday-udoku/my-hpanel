@@ -147,7 +147,7 @@ const PrivatePageLink = () => {
       @media(max-width:786px){
         font-size:1.5rem !important;
         top:1rem !important;
-     
+
       }
       }
   `
