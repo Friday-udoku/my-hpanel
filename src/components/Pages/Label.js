@@ -101,14 +101,14 @@ window.addEventListener('scroll', changeBackground)
        
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
-              <LINK as={NavLink} to = '/' onClick={refreshPage} ><span className='span'>Home</span></LINK>
-              <LINK as={NavLink} to = "Gallary" onClick={refreshPage}><span className='span'>Gallery</span>
+              <LINK as={NavLink} to = '/my-hpanel/home' onClick={refreshPage} ><span className='span'>Home</span></LINK>
+              <LINK as={NavLink} to = "/my-hpanel/Gallary" onClick={refreshPage}><span className='span'>Gallery</span>
               </LINK>
-              <LINK as={NavLink} to = 'Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
-              <LINK as={NavLink} to = 'SignIn' onClick={refreshPage}><span className='span'>Minutes</span>
+              <LINK as={NavLink} to = '/my-hpanel/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
+              <LINK as={NavLink} to = '/my-hpanel/SignIn' onClick={refreshPage}><span className='span'>Minutes</span>
               </LINK>
-              <LINK as={NavLink} to = 'Activities'><span className='span'>Activities</span></LINK>
-              <LINK as={NavLink} to = 'npm SignIn' onClick={refreshPage}><span className='span'>Party-Donations</span></LINK>
+              <LINK as={NavLink} to = '/my-hpanel/Activities'><span className='span'>Activities</span></LINK>
+              <LINK as={NavLink} to = '/my-hpanel/SignIn' onClick={refreshPage}><span className='span'>Party-Donations</span></LINK>
             </Nav>
           </div>
 
