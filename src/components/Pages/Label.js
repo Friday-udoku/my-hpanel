@@ -43,7 +43,7 @@ window.addEventListener('scroll', changeBackground)
 
         <div className='navbars row'>
           <a class="navbar-brand relative col-auto" href="#">
-            <h2 className='relative'><NavLink to='/Gallary'>ICANWI</NavLink></h2>
+            <h2 className='relative'>ICANWI</h2>
           </a>
           <span className='menu ' style={{ minWidth: '350px' }}>
             <span style={{ minWidth: '150px', maxWidth: '350px' }}
@@ -88,10 +88,10 @@ window.addEventListener('scroll', changeBackground)
               <LINK to = "/Gallary"><span className='span'>Gallery</span>
               </LINK>
               <LINK  to = "/Videos"><span className='span'>Videos</span></LINK>
-              <LINK  to = "/SignIn" target={'_top'}><span className='span'>Minutes</span>
+              <LINK  to = "/SignIn"><span className='span'>Minutes</span>
               </LINK>
-              <LINK  to = "/Activities" target={'_top'}><span className='span'>Activities</span></LINK>
-              <LINK  to = "/SignIn" target={'_top'}><span className='span'>Party-Donations</span></LINK>
+              <LINK  to = "/"><span className='span'>Activities</span></LINK>
+              <LINK  to = "/SignIn"><span className='span'>Party-Donations</span></LINK>
             </Nav>
           </div>
 

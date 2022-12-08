@@ -73,12 +73,12 @@ const PageNavigstions = () => {
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
           
-              <LINK as={NavLink} to="/" onClick={refreshPage}><span className='span'>Home</span></LINK>
-              <LINK as={NavLink}  to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
-              <LINK as={NavLink}  to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
-              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
-              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Donations</span></LINK>
-              <LINK as={NavLink}  to='/' onClick={refreshPage}><span className='span'>Acheivement</span></LINK>
+              <LINK as={NavLink} to="/"><span className='span'>Home</span></LINK>
+              <LINK as={NavLink}  to="/Gallary"><span className='span' >Gallary</span></LINK>
+              <LINK as={NavLink}  to='/Videos'><span className='span'>Videos</span></LINK>
+              <LINK as={NavLink}  to='/SignIn'><span className='span'>Minutes</span></LINK>
+              <LINK as={NavLink}  to='/SignIn'><span className='span'>Donations</span></LINK>
+              <LINK as={NavLink}  to='/'><span className='span'>Acheivement</span></LINK>
             </Nav>
       
           </div>
