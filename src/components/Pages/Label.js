@@ -25,17 +25,12 @@ import { useAuth } from '../../Auth'
   let refs = useRef(null);
   const openMinutes =()=>{'/Minutes'}
 
-  const  authenticate=(e)=>{
-   navigate('/SignIn')
-   refreshPage() 
-    }
-
+ 
   
     function refreshPage() {
-      setTimeout(()=>{
+    
           window.location.reload();
-      }, 500);
-      console.log('page to reload')
+   
     }
  
    const changeBackground = ()=>{
