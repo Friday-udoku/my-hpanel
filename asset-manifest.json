@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-hpanel/static/css/main.15102888.css",
-    "main.js": "/my-hpanel/static/js/main.c8130035.js",
+    "main.js": "/my-hpanel/static/js/main.b17b4888.js",
     "static/media/bg-video.mp4": "/my-hpanel/static/media/bg-video.7625476ee9f620bf5c06.mp4",
     "static/media/kidsdance.mp4": "/my-hpanel/static/media/kidsdance.5ba5d25ff72bed21d0b6.mp4",
     "static/media/relay4life.mp4": "/my-hpanel/static/media/relay4life.1ec39e05bf841e05cda9.mp4",
@@ -59,10 +59,10 @@
     "static/media/purple14.jpg": "/my-hpanel/static/media/purple14.495c9377a9e7c5d8de55.jpg",
     "index.html": "/my-hpanel/index.html",
     "main.15102888.css.map": "/my-hpanel/static/css/main.15102888.css.map",
-    "main.c8130035.js.map": "/my-hpanel/static/js/main.c8130035.js.map"
+    "main.b17b4888.js.map": "/my-hpanel/static/js/main.b17b4888.js.map"
   },
   "entrypoints": [
     "static/css/main.15102888.css",
-    "static/js/main.c8130035.js"
+    "static/js/main.b17b4888.js"
   ]
 }
