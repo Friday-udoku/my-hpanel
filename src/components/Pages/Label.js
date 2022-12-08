@@ -85,9 +85,9 @@ window.addEventListener('scroll', changeBackground)
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
               <LINK to = '/' ><span className='span'>Home</span></LINK>
-              <LINK to = "/Gallary" target={'_top'}><span className='span'>Gallery</span>
+              <LINK to = "/Gallary"><span className='span'>Gallery</span>
               </LINK>
-              <LINK  to = "/Videos" target={'_top'}><span className='span'>Videos</span></LINK>
+              <LINK  to = "/Videos"><span className='span'>Videos</span></LINK>
               <LINK  to = "/SignIn" target={'_top'}><span className='span'>Minutes</span>
               </LINK>
               <LINK  to = "/Activities" target={'_top'}><span className='span'>Activities</span></LINK>
