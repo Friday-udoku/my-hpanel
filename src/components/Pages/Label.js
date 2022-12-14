@@ -2,15 +2,11 @@ import {React, useState, useRef} from 'react'
 import {BsChevronCompactDown} from 'react-icons/bs'
 import styled from 'styled-components'
 import {BsJustify} from 'react-icons/bs'
-import logo2 from '../image/logorm.png'
-import { WindowDesktop } from 'react-bootstrap-icons'
-import {Container,Navbar,} from 'react-bootstrap';
-import {NavLink, useNavigate, Link} from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import {NavLink, useNavigate, Link, Navigate} from 'react-router-dom';
+import {Nav} from 'react-bootstrap';
 import Modals from '../Header/DropdownContainer/Modals'
 import Register from '../Header/DropdownContainer/Register'
 import Minutes from './Minutes'
-import Forms from '../Pages/Forms'
 import SignIn from '../Header/DropdownContainer/SignIn'
 import { useAuth } from '../../Auth'
 
@@ -18,18 +14,12 @@ import { useAuth } from '../../Auth'
 
   const Label= () => {
     const auth = useAuth
-    let navigate = useNavigate()
+    const navigate = useNavigate()
   const[dropdownCover, setdropdownCover] = useState(false);
   const[username, setUsername]=useState('')
   const[password, setPassword]=useState('')
   let refs = useRef(null);
-  const openMinutes =()=>{'/Minutes'}
-
  
-  function refreshPage() {
-    window.reload(false);
-  }
-    
  
    const changeBackground = ()=>{
    if(window.scrollY>=80){
@@ -94,19 +84,20 @@ window.addEventListener('scroll', changeBackground)
        
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
-              <NAVLINK to="/" onClick={refreshPage}><span className='span'>Home</span></NAVLINK>
-              <NAVLINK to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></NAVLINK>
-              <NAVLINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></NAVLINK>
-              <NAVLINK  to = '/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></NAVLINK>
-              <NAVLINK to='/Activities'><span className='span'>Activities</span></NAVLINK>
-              <NAVLINK to='/Acheivement'><span className='span'>Acheivement</span></NAVLINK>
+              <LINK to = '/' target={'_parent'}><span className='span'>Home</span></LINK>
+              <LINK to = "/Gallary" target={'_parent'}><span className='span'>Gallery</span>
+              </LINK>
+              <LINK  to = "/Videos" target={'_parent'}><span className='span'>Videos</span></LINK>
+              <LINK  to = "/SignIn" target={'_parent'}><span className='span'>Minutes</span>
+              </LINK>
+              <LINK  to = "/SignIn" target={'_parent'}><span className='span'>Constitution</span></LINK>
+              <LINK  to = "/SignIn" target={'_parent'}><span className='span'>Events</span></LINK>
             </Nav>
-      
           </div>
-       
+
         
   
-          <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
+          {/* <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
             style={{ maxWidth: '10rem' }}>
 
              <button type="button" className="btn  btn-customised buttonx" style={{
@@ -120,12 +111,10 @@ window.addEventListener('scroll', changeBackground)
               Sign-in
             </button>
             <span className='REG'><Register className="" /></span>
-          </div>
+          </div> */}
         </div>
-
       </CANVAS>
     </div>
-   
     </>
   
   )
@@ -133,7 +122,8 @@ window.addEventListener('scroll', changeBackground)
 
 export default Label
 
-const NAVLINK = styled(NavLink)`
+ 
+const LINK = styled(NavLink)`
     color:#f56038 !important;
     font-size:1.2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;

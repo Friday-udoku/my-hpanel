@@ -45,7 +45,7 @@
         refs.current.value= "";
       }
     }; 
-  
+
    const handleLogin = ()=>{
    checkStatus();
    }
@@ -97,7 +97,7 @@
                   <div className="text-center pt-1 mb-3 pb-1">
                     <button className=
                     "btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 me-2" 
-                    type="button" onClick={handleLogin}>
+                    type="submit" onClick={handleLogin}>
                       Log
                       in</button>
                    

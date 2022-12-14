@@ -12,7 +12,7 @@ const Pdf = () => {
  }
   return (
    <>
- <p>{<img src={image1} alt= 'Big image'/>}</p> 
+ <p>{<img src={image1} alt= 'Big image pdf'/>}</p> 
  <Button as={Link} to='/Constitution' className='constitution w-100'
 
  >Click to Read More</Button>

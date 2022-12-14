@@ -235,6 +235,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   padding-top: 3rem !important;
 
   }
+
 }
 .what-we-do-title{
   box-sizing: border-box;
@@ -289,10 +290,17 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   .what-we-do-cover{
   .cards-body{
     background: #f2f2f2;
+    background: orange !important;
     color:#000009;
     max-height:320px !important;
     min-height:320px !important;
     padding:1rem 2rem !important;
+    @media(max-width:992px){
+      max-height:300px !important;
+      padding-top:2rem;
+      padding-bottom:0;
+
+    }
   }
 }
 

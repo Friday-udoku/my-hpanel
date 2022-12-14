@@ -52,10 +52,11 @@ const PageNavigstions = () => {
                 data-bs-toggle="offcanvas" data-bs-target="#demo"
                 className='hover:cursor-pointer dropIcon pt-2 mr-5 relative' />
 
-              <span className='navbar-links d-flex '>
-                <a href='#' className='nav-link'>Sign in</a>
+               <span className='navbar-links Auth-btn relative top-6'>
+                <NavLink className='span-log relative right-6 w-20 text-decoration-none' to='/SignIn'>Sign in</NavLink>
                 <a href='#' className='nav-link'><Modals /></a>
               </span>
+            
             </span>
 
           </span>
@@ -72,19 +73,19 @@ const PageNavigstions = () => {
           <div className="offcanvas-body">
             <Nav className="me-auto d-flex flex-col">
           
-              <NAVLINK id='gallary' to="/" onClick={refreshPage}><span className='span'>Home</span></NAVLINK>
-              <NAVLINK to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></NAVLINK>
-              <NAVLINK to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></NAVLINK>
-              <NAVLINK to='/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></NAVLINK>
-              <NAVLINK to='/Activities' onClick={refreshPage}><span className='span'>Activities</span></NAVLINK>
-              <NAVLINK to='/Acheivement' onClick={refreshPage}><span className='span'>Acheivement</span></NAVLINK>
+              <LINK as={NavLink} to="/" onClick={refreshPage}><span className='span'>Home</span></LINK>
+              <LINK as={NavLink}  to="/Gallary" onClick={refreshPage}><span className='span' >Gallary</span></LINK>
+              <LINK as={NavLink}  to='/Videos' onClick={refreshPage}><span className='span'>Videos</span></LINK>
+              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Minutes</span></LINK>
+              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Constitution</span></LINK>
+              <LINK as={NavLink}  to='/SignIn' onClick={refreshPage}><span className='span'>Events</span></LINK>
             </Nav>
       
           </div>
        
         
   
-          <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
+          {/* <div className='buttons relative bottom-20 left-24 d-flex  flex-column justify-evenly'
             style={{ maxWidth: '10rem' }}>
 
              <button type="button" className="btn  btn-customised buttonx" style={{
@@ -98,7 +99,7 @@ const PageNavigstions = () => {
               Sign-in
             </button>
             <span className='REG'><Register className="" /></span>
-          </div>
+          </div> */}
         </div>
 
       </CANVAS>
@@ -111,7 +112,7 @@ const PageNavigstions = () => {
 
 export default PageNavigstions
 
-const NAVLINK = styled(NavLink)`
+const LINK = styled(Nav.Link)`
     color:#f56038 !important;
     font-size:1.2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;

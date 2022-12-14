@@ -30,7 +30,7 @@ import {FiSearch} from "react-icons/fi";
           <Card.Body className='cards-body'>
             <Card.Title>Cultural Integration</Card.Title>
             <TEXT>
-            While people are interested in participating in a wider society, they would also like to retain and express their heritage culture. Through cultural integration, this association has been committed to providing individuals with the opportunities to model their heritage culture and experience a higher quality of life within the community 
+            While people are interested in participating in a wider society, they would also like to retain and express their heritage culture. Through cultural integration, this association has been committed to providing individuals with the opportunities to model their heritage culture and experience a higher quality of life within the community....  
             <span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </TEXT>
           </Card.Body>
@@ -46,7 +46,7 @@ import {FiSearch} from "react-icons/fi";
           <Card.Body className='cards-body'>
             <Card.Title>Equality and Diversity</Card.Title>
             <TEXT>
-            It is important to view others humanely in a culture that values humane orientations. As a group, we understood how lonely people can feel, as well as how emotionally stressful it can be to feel that you are alone. Our goal has been to promote altruistic behavior, and harmony between different races.  
+            It is important to view others humanely in a culture that values humane orientations. As a group, we understood how lonely people can feel, as well as how emotionally stressful it can be to feel that you are alone. Our goal has been to promote altruistic behavior, and harmony between different races....  
             <span><Button className='btn-sm text-primary bg-transparent border-0'>Read more</Button></span>
             </TEXT>
           </Card.Body>
@@ -62,7 +62,7 @@ import {FiSearch} from "react-icons/fi";
           <Card.Body className='cards-body'>
             <Card.Title>Volunteering</Card.Title>
             <TEXT>
-            We have freely donated our time to the benefit of our community and other organizations. Also made significant contributions to the development of social conditions in the North-West region. On the other hand, it has been extremely beneficial to the group in terms of expanding our network and giving us a sense of purpose and belonging.
+            We have freely donated our time to the benefit of our community and other organizations. Also made significant contributions to the development of social conditions in the North-West region. On the other hand, it has been extremely beneficial to the group in terms of expanding our network and giving us a sense of purpose and belonging.... 
             <span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </TEXT>
           </Card.Body>
@@ -77,7 +77,7 @@ import {FiSearch} from "react-icons/fi";
         <Card.Body className='cards-body'>
         <Card.Title>Charity Activities</Card.Title>
         <TEXT>
-             As a charitable organization, it is our moral duty to help others when we can. Accordingly, We have offered assistance to the community and to people in need through giving. However, We have benefited not only by feeling more content and fulfilled, but by making new friends, learning various skills, and growing professionally.
+             As a charitable organization, it is our moral duty to help others when we can. Accordingly, We have offered assistance to the community and to people in need through giving. However, We have benefited not only by feeling more content and fulfilled, but by making new friends, learning various skills, and growing professionally.... 
              <span><Button className='btn-sm text-primary bg-transparent border-0'>Read more</Button></span>
             </TEXT>
           </Card.Body>
@@ -119,7 +119,6 @@ import {FiSearch} from "react-icons/fi";
     color:#353935;
     overflow:hidden !important;
     display:inline-block;
-   
-   
-  
+    min-height:300px ! important;
+    height: auto !important;
     `
